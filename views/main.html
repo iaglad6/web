@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="author" content="Беркович Максим">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лабораторная работа">
+    <link rel="shortcut icon" href="/images/logo_hse.png" type="images/hse_icon">
+    <title>HSE student</title>
+    <style>
+        h1, footer{
+            text-align: center;
+        }
+        main,p, nav {
+            font-size: 14pt;
+        }
+        #logo{
+            border: 3px solid yellow;
+            position: relative;
+            left: 25%;
+            top: 0;
+        }
+
+    </style>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin="">
+    </script>
+</head>
+<body>
+  <header>
+    <h1>Это личная страница студента ВШЭ Берковича Максима</h1>
+  </header>
+  <nav class="menu">
+      <ul>
+          <li><a href="">Главная</a></li>
+          <li><a href="/form">Обратная связь</a></li>
+      </ul>
+  </nav>
+<main>
+    <section>
+        <h2 class="shadowbox">Информация обо мне</h2>
+        <p>Я являюсь студентом 3-го курса <a href="https://www.hse.ru/" target="_blank">Высшей школы Экономики</a> факультета МИЭМ
+    образовательной программы <a href="https://www.hse.ru/ba/am/" target="_blank"> "Прикладная математика" </a></p>
+        <img id="logo" src="/images/log_miem.png"
+             alt="Логотип Москвоского института электроники и математики">
+    </section>
+    <div id="map"></div>
+    <section>
+        <h2 class="shadowbox">Образовательная программа</h2><br>
+        <p>Моя программа включает <b> три основных блока</b>:</p>
+        <ul class="special">
+            <li>Фундаментальную математическую подготовку</li>
+            <li>Подготовку в области программирования и информационных технологий </li>
+            <li>Практическую работу</li>
+        </ul>
+        <p>Практическая работа включает в себя участие и защиту проекта на любую выбранную тему. Студенты проводят научно-исследовательскую работу,
+        участвует в организации, развитие и дальнейшей поддержке программных проектов и стартапов.</p>
+        <aside>
+            <p>Более подробную информацию можно узнать на сайте <a href="https://cabinet.miem.hse.ru/#/start" target="_blank">проектов МИЭМа.</a> </p>
+        </aside>
+    </section>
+    <section>
+        <h2 class="shadowbox">Мои интересы</h2>
+        <p>На данный момент я занимаюсь back-end разрабоктой и хочу развиваться в этом направлении.</p>
+    </section>
+    <section>
+        <div class="container">
+            <div id="blockSendMessage" class="row">
+                <input id="inputMessage" class="form-control col-8 col-sm-9 col-md-8" type="text" placeholder="Сообщение">
+                <button id="btnSend" type="button" class="btn btn-secondary col-4 col-sm-3 col-md-4">Отправить</button>
+            </div>
+        </div>
+        <div id="divMessages" class="message border rounded container">
+        </div>
+    </section>
+</main>
+  <hr>
+    <footer id="footer">
+        <p>
+            All rights reserved
+        </p>
+        <address>
+            <p>
+                Москва, 2023
+            </p>
+        </address>
+        <img width="100" height="101" src="../images/logo_hse.png" alt="Логотип Высшей школы экономики">
+    </footer>
+  <hr>
+  <script src="../js/map.js"></script>
+  <script src="../js/chat.js"></script>
+</body>
+</html>

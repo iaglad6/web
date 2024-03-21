@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+h1, footer{
+    text-align: center;
+}
+
+nav li{
+    color:pink;
+}
+
+
+ul.special{
+    color: orange;
+    font-weight: bold;
+    list-style-type: square;
+}
+a:link {
+    color: blue;
+}
+
+/*a:visited {*/
+/*    color: blue;*/
+/*}*/
+
+a:active {
+    color: black; /* Цвет активных ссылок */
+}
+a:hover {
+    text-decoration: none;
+}
+
+h2.shadowbox {
+    width: 10em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 8px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+#map { height: 300px;}
+
+#chat{
+    height: 100px;
+}
+
+.msg{
+    font-weight: 700;
+}
